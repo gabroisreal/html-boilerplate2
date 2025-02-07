@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>help me</title>
-</head>
-<body>
-    <h1> my links</h1>
-    <a href = "https://github.com/gabroisreal/html-boilerplate2">github</a>
-    <a href = "https://github.com/gabroisreal/SOLID-STATE" target="_blank">my latest game</a>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></head>
+
+    <link href="style.css" rel="stylesheet">
+<body class="container max-width">
+    <div>
+        <h1 class=" p-5 my-5 bg-primary text-white"> my link <span class="badge bg-secondary">bad</span></h1>
+        <a href = "https://github.com/gabroisreal/html-boilerplate2">github</a>
+        <a href = "https://github.com/gabroisreal/SOLID-STATE" target="_blank">my latest game</a>    
+    </div>
     <h1>friends and family</h1>
-    <p>dog</p>
-    <p>the guy from dark souls</p>
-    <p>the voices in my head</p>
-    <p>the binding of... <strong>ISAAC</strong></p>
+    <p class="h4">dog</p>
+    <p class="h2">the guy from dark souls</p>
+    <p class="h5 text-primary">the voices in my head</p>
+    <p class="h1 text-danger">the binding of... <strong>ISAAC</strong></p>
     <!-- sickest quote ever-->
     <h2>dark souls guy best quote</h2>
-    <p>
+    <p class="h6">
         <em>
         "Oh, hello there. I will stay behind, to gaze at the sun.
         The sun is a wondrous body. Like a magnificent father!
         If only I could be so grossly incandescent!"
-        </em> -solaire of astora (dark souls)
+        </em> -solaire of astora (dark souls) <span class="badge bg-success">neat</span>
     </p>
-    <img src="./images/solaire.jpg" alt="solaire from dark souls" width="200" height="200">
+    <div class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>WARNING</strong>.YOU SUCK
+      </div>
+    <img src="./images/solaire.jpg"  class="rounded-circle" alt="solaire from dark souls" width="200" height="200">
+    <img src="./images/isaac.jpg"  class="rounded" alt="isaac" width="500" height="500">
+    <img src="./images/birdo.png"  class="img-thumbnail" alt="that bird that i hate" width="1000" height="1000">
     <!-- woah -->
+
+
+    <button type="button" class="btn btn-danger">you suck</button>
     <h3>list of gifts from friends</h3>
     <ul> 
         <li>bomb</li>
@@ -34,7 +51,7 @@
     </ul>
 
     <h4>table</h4>
-    <table>
+    <table class="table-sm">
         <colgroup>
             <col span="1" style="background-color:black">
             <col style="background-color:red">
@@ -52,6 +69,79 @@
         </tr>
         
     </table>
-    <h5>WHY WONT THINGS WORK</h5>
+
+
+    <table class="table-hover">
+        <colgroup>
+            <col span="1" style="background-color:black">
+            <col style="background-color:red">
+            <col span="1" style="background-color:black">
+          </colgroup>
+        <tr>
+            <th style="-webkit-text-fill-color: white">dark soul?</th>
+            <th style="-webkit-text-fill-color: white">sheldon ring</th>
+            <th style="-webkit-text-fill-color: white">the binding of isaac repentance</th>    
+        </tr>
+        <tr>
+            <td style="-webkit-text-fill-color: white">PRAISE THE SUN</td>
+            <td style="-webkit-text-fill-color: white">bazinga</td>
+            <td style="-webkit-text-fill-color: white">Isaac and his mother lived alone in a small house on a hill.</td>
+        </tr>
+
+    </table>
+
+    <p class="h1">WHY WONT THINGS WORK</p>
+
+
+    <div class="row">
+        <div class=".col-lg">
+            no
+s        </div>
+        <div class=".col-lg">
+            no
+        </div>
+        <div class=".col-lg">
+            no
+        </div>
+      </div>
+    <div class="row">
+        <div class=".col-lg">
+            no
+        </div>
+        <div class=".col-lg">
+            no
+        </div>
+        <div class=".col-lg">
+            no
+        </div>
+    </div>
+
+
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+    <a href="https://github.com/gabroisreal/html-boilerplate2" class="btn btn-primary disabled">Disabled Link</a>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">help</button>
+        <button type="button" class="btn btn-primary">no</button>
+        <button type="button" class="btn btn-primary">wah</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">help</button>
+        <button type="button" class="btn btn-primary">no</button>
+        <button type="button" class="btn btn-primary">wah</button>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" style="width:95%">how annoying i think you are</div>
+      </div>
+      <div class="spinner-border spinnger-border text-danger"></div>
+      <div class="spinner-grow spinner-border-sm"></div>
+
+
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        searching for my sanity
+      </button>
 </body>
 </html>
